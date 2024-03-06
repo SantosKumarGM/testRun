@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cucumber</title>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<style>
+.cucumber-react .cucumber-status--passed {
+  color: #2CB14A;
+}
+.cucumber-react .cucumber-status--skipped {
+  color: #00A0CC;
+}
+.cucumber-react .cucumber-status--pending {
+  color: #FFAD33;
+}
+.cucumber-react .cucumber-status--undefined {
+  color: #FFAD33;
+}
+.cucumber-react .cucumber-status--ambiguous {
+  color: #F4EBFD;
+}
+.cucumber-react .cucumber-status--failed {
+  color: #BB0000;
+}
+.cucumber-react .cucumber-status--unknown {
+  color: #B6BECB;
+}
+.cucumber-react h1, .cucumber-react h2, .cucumber-react h3 {
+  padding: 0;
+  margin: 0;
+}
+.cucumber-react a {
+  color: inherit;
+}
+.cucumber-react .gherkin-document-list {
+  font: 14px "Open Sans", sans-serif;
+  color: #161C24;
+  background: #fff;
+  overflow-x: hidden;
+}
+.cucumber-react .cucumber-title {
+  margin-top: 0.3em;
+  margin-bottom: 0;
+  display: inline-block;
+}
+.cucumber-react .cucumber-title__keyword {
+  font-weight: bold;
+}
+.cucumber-react .cucumber-title__text {
+  font-weight: normal;
+}
+.cucumber-react .cucumber-tags {
+  padding: 0;
+  margin-bottom: 0;
+}
+.cucumber-react .cucumber-tags .cucumber-tag {
+  display: inline;
+  list-style-type: none;
+  padding: 4px 8px 4px 8px;
+  margin-right: 6px;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+}
+.cucumber-react .cucumber-feature__icon {
+  padding-top: 0.35em;
+  padding-right: 0.5em;
+}
+.cucumber-react .cucumber-description,
+.cucumber-react .cucumber-children {
+  margin-left: 1em;
+}
+.cucumber-react .cucumber-feature,
+.cucumber-react .cucumber-rule,
+.cucumber-react .cucumber-scenario,
+.cucumber-react .cucumber-background {
+  margin-bottom: 1em;
+}
+.cucumber-react .cucumber-steps {
+  list-style-type: none;
+  padding-left: 10px;
+}
+.cucumber-react .cucumber-steps .cucumber-step {
+  display: flex;
+}
+.cucumber-react .cucumber-steps .cucumber-step__status {
+  padding-top: 0.2em;
+  padding-right: 0.5em;
+}
+.cucumber-react .cucumber-steps .cucumber-step__content {
+  flex-grow: 1;
+}
+.cucumber-react .cucumber-steps .cucumber-step__keyword {
+  font-weight: bold;
+}
+.cucumber-react .cucumber-steps .cucumber-step__text {
+  font-weight: normal;
+}
+.cucumber-react .cucumber-steps .cucumber-step__param {
+  font-weight: normal;
+  font-style: italic;
+}
+.cucumber-react .cucumber-table {
+  border-collapse: collapse;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.cucumber-react .cucumber-table__header-cell {
+  border: 1px solid #4B5662;
+  padding: 0.3em;
+}
+.cucumber-react .cucumber-table__cell {
+  border: 1px solid #4B5662;
+  padding: 0.3em;
+}
+.cucumber-react .cucumber-table__cell__status {
+  padding: 0.5em 3px 3px 3px;
+}
+.cucumber-react .cucumber-table__cell__step {
+  flex-grow: 1;
+}
+.cucumber-react .cucumber-code {
+  padding: 0.25em;
+  background-color: #ebebeb;
+}
+.cucumber-react .cucumber-error {
+  padding: 0.5em;
+  margin: 0;
+  overflow: scroll;
+}
+.cucumber-react .cucumber-no-documents {
+  font: 14px "Open Sans", sans-serif;
+}
+.cucumber-react .cucumber-attachment {
+  background-color: #ebebeb;
+  padding: 0.5em;
+}
+.cucumber-react .cucumber-attachment__icon {
+  margin-right: 0.5em;
+}
+.cucumber-react .cucumber-attachment__image {
+  margin-top: 1em;
+}
+.cucumber-react .cucumber-anchor {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 0.3em;
+}
+.cucumber-react .cucumber-anchor__link {
+  opacity: 0;
+  transition: all 0.35s ease-in-out;
+  position: absolute;
+  left: -20px;
+  display: flex;
+  align-items: center;
+}
+.cucumber-react .cucumber-anchor__icon {
+  margin-right: 0.5em;
+}
+.cucumber-react .cucumber-anchor:hover a {
+  opacity: 1;
+  width: max-content;
+  transition: all 0.35s ease-in-out;
+}
+.cucumber-react .cucumber-anchor > * {
+  height: 100%;
+  margin-top: 0px;
+}
+
+.cucumber-report-header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font: 11px "Open Sans", sans-serif;
+  margin-bottom: 1em;
+}
+.cucumber-report-header > * {
+  padding: 1em;
+}
+.cucumber-report-header .cucumber-status-filter {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.cucumber-report-header .cucumber-status-filter table {
+  width: 100%;
+}
+.cucumber-report-header .cucumber-execution-data {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.cucumber-report-header .cucumber-search-bar {
+  border-right: 0;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-search {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-search input {
+  padding: 0.4em;
+  border-radius: 0;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-search button {
+  height: 2.2em;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+}
+.cucumber-report-header .cucumber-search-bar p.help {
+  font-size: 80%;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-filter ul {
+  display: inline;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-filter ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-filter ul li input {
+  display: inline-block;
+  width: auto;
+  height: 0.6em;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-filter ul li label {
+  padding-right: 1em;
+}
+
+@media only screen and (min-width: 600px) {
+  .cucumber-report-header {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cucumber-report-header .cucumber-status-filter {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .cucumber-report-header .cucumber-search-bar {
+    grid-column: 1/-1;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .cucumber-report-header {
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+  .cucumber-report-header .cucumber-status-filter {
+    border-bottom: 0;
+  }
+  .cucumber-report-header .cucumber-execution-data {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0;
+  }
+  .cucumber-report-header .cucumber-search-bar {
+    grid-column: auto;
+  }
+}
+.accordion {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+
+.accordion__item + .accordion__item {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.accordion__button {
+    background-color: #f4f4f4;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+}
+
+.accordion__button:hover {
+    background-color: #ddd;
+}
+
+.accordion__button:before {
+    display: inline-block;
+    content: '';
+    height: 10px;
+    width: 10px;
+    margin-right: 12px;
+    border-bottom: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(-45deg);
+}
+
+.accordion__button[aria-expanded='true']::before,
+.accordion__button[aria-selected='true']::before {
+    transform: rotate(45deg);
+}
+
+.accordion__panel {
+    padding: 20px;
+    animation: fadein 0.35s ease-in;
+}
+
+	</style>
+</head>
+<body>
+<div id="content">
+</div>
+<script>
+window.CUCUMBER_MESSAGES = [{"meta":{"protocolVersion":"13.2.1","implementation":{"name":"cucumber-jvm","version":"6.9.1"},"runtime":{"name":"OpenJDK 64-Bit Server VM","version":"17.0.9+9"},"os":{"name":"Windows 11"},"cpu":{"name":"amd64"}}},{"testRunStarted":{"timestamp":{"seconds":"1709697740","nanos":926513300}}},{"source":{"uri":"file:///C:/Users/gmsan/eclipse-workspace/java/AjioTestRunnerTWO/./src/test/resources/1Ajio.feature","data":"@ajio\r\nFeature: Ajio Mens Shopping\r\n\r\nBackground: Launch Ajio\r\nGiven Launch Ajio \"https://www.ajio.com/\"\r\nAnd Navigate to men and click on Footware\r\n\r\nScenario: Mens Footware sorting\r\nWhen User clicks on sort by and selects option in dropdown with one dim map\r\n|sort1|highest|\r\n|sort2|discount|\r\n|sort3|lowest|\r\n|sort4|what|\r\n|sort6|rating|\r\n|sort5|relavance|\r\nThen Validate the price list","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///C:/Users/gmsan/eclipse-workspace/java/AjioTestRunnerTWO/./src/test/resources/1Ajio.feature","feature":{"location":{"line":2,"column":1},"tags":[{"location":{"line":1,"column":1},"name":"@ajio","id":"3965c74a-2575-4ca7-ae9b-0fb44c1ebfd3"}],"language":"en","keyword":"Feature","name":"Ajio Mens Shopping","children":[{"background":{"location":{"line":4,"column":1},"keyword":"Background","name":"Launch Ajio","steps":[{"location":{"line":5,"column":1},"keyword":"Given ","text":"Launch Ajio \"https://www.ajio.com/\"","id":"0acf8166-3224-43f7-89ac-6deb8704c060"},{"location":{"line":6,"column":1},"keyword":"And ","text":"Navigate to men and click on Footware","id":"11ff1a31-988b-4ffa-9b0f-1297457c34ea"}],"id":"8c0a88ba-4b5c-4483-b1a3-4246e0e96cb0"}},{"scenario":{"location":{"line":8,"column":1},"keyword":"Scenario","name":"Mens Footware sorting","steps":[{"location":{"line":9,"column":1},"keyword":"When ","text":"User clicks on sort by and selects option in dropdown with one dim map","dataTable":{"location":{"line":10,"column":1},"rows":[{"location":{"line":10,"column":1},"cells":[{"location":{"line":10,"column":2},"value":"sort1"},{"location":{"line":10,"column":8},"value":"highest"}],"id":"217b702e-d00c-4963-91a6-39f16c947118"},{"location":{"line":11,"column":1},"cells":[{"location":{"line":11,"column":2},"value":"sort2"},{"location":{"line":11,"column":8},"value":"discount"}],"id":"ffe1e47d-4e81-4c95-b8cb-b7ed788371bc"},{"location":{"line":12,"column":1},"cells":[{"location":{"line":12,"column":2},"value":"sort3"},{"location":{"line":12,"column":8},"value":"lowest"}],"id":"5aa77a83-a039-4db0-b782-889c2d5b16cf"},{"location":{"line":13,"column":1},"cells":[{"location":{"line":13,"column":2},"value":"sort4"},{"location":{"line":13,"column":8},"value":"what"}],"id":"ed1ac156-6299-42e3-a43d-3208a8208288"},{"location":{"line":14,"column":1},"cells":[{"location":{"line":14,"column":2},"value":"sort6"},{"location":{"line":14,"column":8},"value":"rating"}],"id":"088b3077-baea-4577-b662-339e91ef5c98"},{"location":{"line":15,"column":1},"cells":[{"location":{"line":15,"column":2},"value":"sort5"},{"location":{"line":15,"column":8},"value":"relavance"}],"id":"98472b22-8fc7-4627-b15e-86798ae9bf69"}]},"id":"b95943ad-f91a-460b-93d7-9b72bae68fef"},{"location":{"line":16,"column":1},"keyword":"Then ","text":"Validate the price list","id":"1bf380d9-3aa0-4e2e-a21b-b41756bb4681"}],"id":"eff8c1e8-ab61-4fc8-b75f-a94ffd90c870"}}]}}},{"pickle":{"id":"ccf47073-885f-4aad-b260-d21d792695ef","uri":"file:///C:/Users/gmsan/eclipse-workspace/java/AjioTestRunnerTWO/./src/test/resources/1Ajio.feature","name":"Mens Footware sorting","language":"en","steps":[{"text":"Launch Ajio \"https://www.ajio.com/\"","id":"d5b688d0-d029-49a7-b9cc-42e8ae82a772","astNodeIds":["0acf8166-3224-43f7-89ac-6deb8704c060"]},{"text":"Navigate to men and click on Footware","id":"dcc91dec-03e0-4079-8a42-48048d92413f","astNodeIds":["11ff1a31-988b-4ffa-9b0f-1297457c34ea"]},{"text":"User clicks on sort by and selects option in dropdown with one dim map","argument":{"dataTable":{"rows":[{"cells":[{"value":"sort1"},{"value":"highest"}]},{"cells":[{"value":"sort2"},{"value":"discount"}]},{"cells":[{"value":"sort3"},{"value":"lowest"}]},{"cells":[{"value":"sort4"},{"value":"what"}]},{"cells":[{"value":"sort6"},{"value":"rating"}]},{"cells":[{"value":"sort5"},{"value":"relavance"}]}]}},"id":"5992d11c-8a2f-482a-b975-b78f3de22e86","astNodeIds":["b95943ad-f91a-460b-93d7-9b72bae68fef"]},{"text":"Validate the price list","id":"51e43467-947a-428a-8292-b32a6bcca0f2","astNodeIds":["1bf380d9-3aa0-4e2e-a21b-b41756bb4681"]}],"tags":[{"name":"@ajio","astNodeId":"3965c74a-2575-4ca7-ae9b-0fb44c1ebfd3"}],"astNodeIds":["eff8c1e8-ab61-4fc8-b75f-a94ffd90c870"]}},{"source":{"uri":"file:///C:/Users/gmsan/eclipse-workspace/java/AjioTestRunnerTWO/./src/test/resources/2face.feature","data":"@facebook\r\nFeature: Create profile in Facebook \r\n\r\nBackground: Launch Facebook\r\nGiven Launch Facebook \"https://www.facebook.com/\"\r\nAnd Navigate to create new account\r\n\r\nScenario Outline: Create new Account\r\nWhen Enter the name \"\u003cFirst name\u003e\"\r\nWhen Enter the surname \"\u003cSurname\u003e\"\r\nWhen Enter the number \"\u003cMobile number\u003e\"\r\nWhen Enter the password \"\u003cNew password\u003e\"\r\nWhen Enter the Date \"\u003cDate\u003e\"\r\nWhen Enter the Month \"\u003cMonth\u003e\"\r\nWhen Enter the Year \"\u003cYear\u003e\"\r\nWhen Click On Sigh Up\r\nThen Take screenshot \"\u003cFirst name\u003e\"\r\nAnd Validate the url\r\n\r\nExamples:\r\n|First name|Surname|Mobile number|New password|Date|Month|Year|\r\n|veni   |v   |58465875  |j12345i|11|Aug|1999|\r\n|Santos   |G.M   |58465875  |j12345i|11|Aug|1999|\r\n|KArthik   |D   |58465875  |j12345i|11|Aug|1997|\r\n|azhagu   |R   |58465875  |j12345i|11|Aug|1995|\r\n\r\n\r\n\r\n","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///C:/Users/gmsan/eclipse-workspace/java/AjioTestRunnerTWO/./src/test/resources/2face.feature","feature":{"location":{"line":2,"column":1},"tags":[{"location":{"line":1,"column":1},"name":"@facebook","id":"4ec99cde-8abc-4772-a63d-857285e6da5a"}],"language":"en","keyword":"Feature","name":"Create profile in Facebook","children":[{"background":{"location":{"line":4,"column":1},"keyword":"Background","name":"Launch Facebook","steps":[{"location":{"line":5,"column":1},"keyword":"Given ","text":"Launch Facebook \"https://www.facebook.com/\"","id":"3ae7625b-5c82-4317-954a-596e7a57f2b5"},{"location":{"line":6,"column":1},"keyword":"And ","text":"Navigate to create new account","id":"8826322d-7703-4512-8b77-717475ed5d7b"}],"id":"98ee3e47-d8bf-4232-8f34-d83471d7c624"}},{"scenario":{"location":{"line":8,"column":1},"keyword":"Scenario Outline","name":"Create new Account","steps":[{"location":{"line":9,"column":1},"keyword":"When ","text":"Enter the name \"\u003cFirst name\u003e\"","id":"09cb0546-469d-4471-aac5-ba80d944a9ac"},{"location":{"line":10,"column":1},"keyword":"When ","text":"Enter the surname \"\u003cSurname\u003e\"","id":"313b7a10-4972-436d-b8ad-22c15e15f101"},{"location":{"line":11,"column":1},"keyword":"When ","text":"Enter the number \"\u003cMobile number\u003e\"","id":"e5a2ed29-79b2-4d04-8a9f-f21c6bc182de"},{"location":{"line":12,"column":1},"keyword":"When ","text":"Enter the password \"\u003cNew password\u003e\"","id":"4eaae166-fb58-4fdb-95f7-97ac4420fef1"},{"location":{"line":13,"column":1},"keyword":"When ","text":"Enter the Date \"\u003cDate\u003e\"","id":"9742bcaf-5fd0-40c0-be8e-792d40387d21"},{"location":{"line":14,"column":1},"keyword":"When ","text":"Enter the Month \"\u003cMonth\u003e\"","id":"54efbf98-05cf-4986-8726-904313bb7c84"},{"location":{"line":15,"column":1},"keyword":"When ","text":"Enter the Year \"\u003cYear\u003e\"","id":"79a256a8-7748-4e6e-bb49-5d4cecfcbf96"},{"location":{"line":16,"column":1},"keyword":"When ","text":"Click On Sigh Up","id":"ec53b46d-748f-4a47-83d1-d92f7d7af16a"},{"location":{"line":17,"column":1},"keyword":"Then ","text":"Take screenshot \"\u003cFirst name\u003e\"","id":"32d80ad8-ee7e-45b8-b58a-0b4107e1d825"},{"location":{"line":18,"column":1},"keyword":"And ","text":"Validate the url","id":"8e185751-7bc5-492c-9378-58eb664e1ffb"}],"examples":[{"location":{"line":20,"column":1},"keyword":"Examples","tableHeader":{"location":{"line":21,"column":1},"cells":[{"location":{"line":21,"column":2},"value":"First name"},{"location":{"line":21,"column":13},"value":"Surname"},{"location":{"line":21,"column":21},"value":"Mobile number"},{"location":{"line":21,"column":35},"value":"New password"},{"location":{"line":21,"column":48},"value":"Date"},{"location":{"line":21,"column":53},"value":"Month"},{"location":{"line":21,"column":59},"value":"Year"}],"id":"d11b3768-9cea-4391-855d-59e7710ebed1"},"tableBody":[{"location":{"line":22,"column":1},"cells":[{"location":{"line":22,"column":2},"value":"veni"},{"location":{"line":22,"column":10},"value":"v"},{"location":{"line":22,"column":15},"value":"58465875"},{"location":{"line":22,"column":26},"value":"j12345i"},{"location":{"line":22,"column":34},"value":"11"},{"location":{"line":22,"column":37},"value":"Aug"},{"location":{"line":22,"column":41},"value":"1999"}],"id":"48e41a22-66f5-4daa-96ce-09dd21b668fb"},{"location":{"line":23,"column":1},"cells":[{"location":{"line":23,"column":2},"value":"Santos"},{"location":{"line":23,"column":12},"value":"G.M"},{"location":{"line":23,"column":19},"value":"58465875"},{"location":{"line":23,"column":30},"value":"j12345i"},{"location":{"line":23,"column":38},"value":"11"},{"location":{"line":23,"column":41},"value":"Aug"},{"location":{"line":23,"column":45},"value":"1999"}],"id":"6e75ba75-7cb5-476c-83d8-c62f9ae04f50"},{"location":{"line":24,"column":1},"cells":[{"location":{"line":24,"column":2},"value":"KArthik"},{"location":{"line":24,"column":13},"value":"D"},{"location":{"line":24,"column":18},"value":"58465875"},{"location":{"line":24,"column":29},"value":"j12345i"},{"location":{"line":24,"column":37},"value":"11"},{"location":{"line":24,"column":40},"value":"Aug"},{"location":{"line":24,"column":44},"value":"1997"}],"id":"7aef6362-6fc6-4eb7-8ac0-45fad4386ee7"},{"location":{"line":25,"column":1},"cells":[{"location":{"line":25,"column":2},"value":"azhagu"},{"location":{"line":25,"column":12},"value":"R"},{"location":{"line":25,"column":17},"value":"58465875"},{"location":{"line":25,"column":28},"value":"j12345i"},{"location":{"line":25,"column":36},"value":"11"},{"location":{"line":25,"column":39},"value":"Aug"},{"location":{"line":25,"column":43},"value":"1995"}],"id":"fbc1a41f-882e-4c44-8a60-5f447f7e93f2"}],"id":"5efd2693-01ab-45f5-82ae-190976363405"}],"id":"ae4e62cb-1262-4e5d-8e58-3121d3111f95"}}]}}},{"pickle":{"id":"26ce69dd-ff37-4067-a387-c6afa365e97c","uri":"file:///C:/Users/gmsan/eclipse-workspace/java/AjioTestRunnerTWO/./src/test/resources/2face.feature","name":"Create new Account","language":"en","steps":[{"text":"Launch Facebook \"https://www.facebook.com/\"","id":"5a319729-39c2-4814-bcd7-95a9040e52b6","astNodeIds":["3ae7625b-5c82-4317-954a-596e7a57f2b5"]},{"text":"Navigate to create new account","id":"3d74a21c-85ea-4044-a945-1f7abbb459fe","astNodeIds":["8826322d-7703-4512-8b77-717475ed5d7b"]},{"text":"Enter the name \"veni\"","id":"71d24ddd-1d53-462d-a0dc-c84b3bd26d6e","astNodeIds":["09cb0546-469d-4471-aac5-ba80d944a9ac","48e41a22-66f5-4daa-96ce-09dd21b668fb"]},{"text":"Enter the surname \"v\"","id":"8c3ddcab-0fc8-4a68-9356-b17e42934bb5","astNodeIds":["313b7a10-4972-436d-b8ad-22c15e15f101","48e41a22-66f5-4daa-96ce-09dd21b668fb"]},{"text":"Enter the number \"58465875\"","id":"ecc0a7eb-34a3-4543-bf0c-f251c78ce359","astNodeIds":["e5a2ed29-79b2-4d04-8a9f-f21c6bc182de","48e41a22-66f5-4daa-96ce-09dd21b668fb"]},{"text":"Enter the password \"j12345i\"","id":"6db3a880-4e37-44fe-a5a4-e6699eee09f9","astNodeIds":["4eaae166-fb58-4fdb-95f7-97ac4420fef1","48e41a22-66f5-4daa-96ce-09dd21b668fb"]},{"text":"Enter the Date \"11\"","id":"d9d4234e-7f11-49b5-b405-faff730de64e","astNodeIds":["9742bcaf-5fd0-40c0-be8e-792d40387d21","48e41a22-66f5-4daa-96ce-09dd21b668fb"]},{"text":"Enter the Month \"Aug\"","id":"53c1f51f-70c6-4204-87ab-f5e776d643a3","astNodeIds":["54efbf98-05cf-4986-8726-904313bb7c84","48e41a22-66f5-4daa-96ce-09dd21b668fb"]},{"text":"Enter the Year \"1999\"","id":"4059ef41-5e3e-42a4-95ed-9fcf0eaff3b7","astNodeIds":["79a256a8-7748-4e6e-bb49-5d4cecfcbf96","48e41a22-66f5-4daa-96ce-09dd21b668fb"]},{"text":"Click On Sigh Up","id":"25c38986-a9e5-42c8-bd43-3885e0ca53d0","astNodeIds":["ec53b46d-748f-4a47-83d1-d92f7d7af16a","48e41a22-66f5-4daa-96ce-09dd21b668fb"]},{"text":"Take screenshot \"veni\"","id":"737cfc9a-9a53-494e-910d-5e4e03c60053","astNodeIds":["32d80ad8-ee7e-45b8-b58a-0b4107e1d825","48e41a22-66f5-4daa-96ce-09dd21b668fb"]},{"text":"Validate the url","id":"d4791aa9-3893-455f-88e5-574856f1cead","astNodeIds":["8e185751-7bc5-492c-9378-58eb664e1ffb","48e41a22-66f5-4daa-96ce-09dd21b668fb"]}],"tags":[{"name":"@facebook","astNodeId":"4ec99cde-8abc-4772-a63d-857285e6da5a"}],"astNodeIds":["ae4e62cb-1262-4e5d-8e58-3121d3111f95","48e41a22-66f5-4daa-96ce-09dd21b668fb"]}},{"pickle":{"id":"b6d1880b-8e7e-4647-9f69-6c103c7aefeb","uri":"file:///C:/Users/gmsan/eclipse-workspace/java/AjioTestRunnerTWO/./src/test/resources/2face.feature","name":"Create new Account","language":"en","steps":[{"text":"Launch Facebook \"https://www.facebook.com/\"","id":"eeac4903-5590-43f6-baeb-69cd5acca95b","astNodeIds":["3ae7625b-5c82-4317-954a-596e7a57f2b5"]},{"text":"Navigate to create new account","id":"047ce94d-3d5d-42fe-af47-e91c69c29acc","astNodeIds":["8826322d-7703-4512-8b77-717475ed5d7b"]},{"text":"Enter the name \"Santos\"","id":"8f7d102f-2471-4175-a0f3-9309bec82250","astNodeIds":["09cb0546-469d-4471-aac5-ba80d944a9ac","6e75ba75-7cb5-476c-83d8-c62f9ae04f50"]},{"text":"Enter the surname \"G.M\"","id":"0897b31b-267f-4071-aba4-e54806b9d061","astNodeIds":["313b7a10-4972-436d-b8ad-22c15e15f101","6e75ba75-7cb5-476c-83d8-c62f9ae04f50"]},{"text":"Enter the number \"58465875\"","id":"18675656-d471-49ed-8a1e-6864b19f228c","astNodeIds":["e5a2ed29-79b2-4d04-8a9f-f21c6bc182de","6e75ba75-7cb5-476c-83d8-c62f9ae04f50"]},{"text":"Enter the password \"j12345i\"","id":"a9f7404b-f227-4659-97de-c4e0ac6d2b2b","astNodeIds":["4eaae166-fb58-4fdb-95f7-97ac4420fef1","6e75ba75-7cb5-476c-83d8-c62f9ae04f50"]},{"text":"Enter the Date \"11\"","id":"f9b1fa22-f225-42b0-994e-59b283a02ab2","astNodeIds":["9742bcaf-5fd0-40c0-be8e-792d40387d21","6e75ba75-7cb5-476c-83d8-c62f9ae04f50"]},{"text":"Enter the Month \"Aug\"","id":"1398685b-ebc0-48de-9923-d3bfb15aac47","astNodeIds":["54efbf98-05cf-4986-8726-904313bb7c84","6e75ba75-7cb5-476c-83d8-c62f9ae04f50"]},{"text":"Enter the Year \"1999\"","id":"0afff24a-f2d2-4410-8640-84e1cf310626","astNodeIds":["79a256a8-7748-4e6e-bb49-5d4cecfcbf96","6e75ba75-7cb5-476c-83d8-c62f9ae04f50"]},{"text":"Click On Sigh Up","id":"7c7cd3d5-98f9-4ada-8838-3975b509286e","astNodeIds":["ec53b46d-748f-4a47-83d1-d92f7d7af16a","6e75ba75-7cb5-476c-83d8-c62f9ae04f50"]},{"text":"Take screenshot \"Santos\"","id":"3548ff79-e932-4380-95c9-05cbdb999d2e","astNodeIds":["32d80ad8-ee7e-45b8-b58a-0b4107e1d825","6e75ba75-7cb5-476c-83d8-c62f9ae04f50"]},{"text":"Validate the url","id":"a431b6d3-36fb-4351-a0ae-2fec1398d17e","astNodeIds":["8e185751-7bc5-492c-9378-58eb664e1ffb","6e75ba75-7cb5-476c-83d8-c62f9ae04f50"]}],"tags":[{"name":"@facebook","astNodeId":"4ec99cde-8abc-4772-a63d-857285e6da5a"}],"astNodeIds":["ae4e62cb-1262-4e5d-8e58-3121d3111f95","6e75ba75-7cb5-476c-83d8-c62f9ae04f50"]}},{"pickle":{"id":"a428bc6e-c6f5-4aed-8861-374c7785e193","uri":"file:///C:/Users/gmsan/eclipse-workspace/java/AjioTestRunnerTWO/./src/test/resources/2face.feature","name":"Create new Account","language":"en","steps":[{"text":"Launch Facebook \"https://www.facebook.com/\"","id":"eeb8d3ba-925e-4b58-9dd1-6a5ee779f3cd","astNodeIds":["3ae7625b-5c82-4317-954a-596e7a57f2b5"]},{"text":"Navigate to create new account","id":"461831bf-ca26-45bc-bf58-80d28268314c","astNodeIds":["8826322d-7703-4512-8b77-717475ed5d7b"]},{"text":"Enter the name \"KArthik\"","id":"1905ea02-4c06-435c-be30-8b1d6fdc66a8","astNodeIds":["09cb0546-469d-4471-aac5-ba80d944a9ac","7aef6362-6fc6-4eb7-8ac0-45fad4386ee7"]},{"text":"Enter the surname \"D\"","id":"3eda0bd1-2bf7-4b04-819d-590baaef18bf","astNodeIds":["313b7a10-4972-436d-b8ad-22c15e15f101","7aef6362-6fc6-4eb7-8ac0-45fad4386ee7"]},{"text":"Enter the number \"58465875\"","id":"1356d40a-eb44-49e6-876e-1d211c7ab3ff","astNodeIds":["e5a2ed29-79b2-4d04-8a9f-f21c6bc182de","7aef6362-6fc6-4eb7-8ac0-45fad4386ee7"]},{"text":"Enter the password \"j12345i\"","id":"26275f5a-1c29-4c54-8766-b400c9ba6050","astNodeIds":["4eaae166-fb58-4fdb-95f7-97ac4420fef1","7aef6362-6fc6-4eb7-8ac0-45fad4386ee7"]},{"text":"Enter the Date \"11\"","id":"7a87ade5-3604-4a7d-807b-aaec23c6edcd","astNodeIds":["9742bcaf-5fd0-40c0-be8e-792d40387d21","7aef6362-6fc6-4eb7-8ac0-45fad4386ee7"]},{"text":"Enter the Month \"Aug\"","id":"9bcb9d8f-a567-4e9d-93fd-24b2f3a001a3","astNodeIds":["54efbf98-05cf-4986-8726-904313bb7c84","7aef6362-6fc6-4eb7-8ac0-45fad4386ee7"]},{"text":"Enter the Year \"1997\"","id":"4e2a640e-dd07-4fb8-8e0d-6e7785f6b784","astNodeIds":["79a256a8-7748-4e6e-bb49-5d4cecfcbf96","7aef6362-6fc6-4eb7-8ac0-45fad4386ee7"]},{"text":"Click On Sigh Up","id":"a2f61105-527d-4b17-8829-449956a85b43","astNodeIds":["ec53b46d-748f-4a47-83d1-d92f7d7af16a","7aef6362-6fc6-4eb7-8ac0-45fad4386ee7"]},{"text":"Take screenshot \"KArthik\"","id":"79d16fe6-b7e9-497e-8d51-8be5484c99e9","astNodeIds":["32d80ad8-ee7e-45b8-b58a-0b4107e1d825","7aef6362-6fc6-4eb7-8ac0-45fad4386ee7"]},{"text":"Validate the url","id":"d6d1ed6

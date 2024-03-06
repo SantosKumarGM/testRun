@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 2.0) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>AjioTestRunnerTWO</td>
+              <td>2.0</td>
+            <td>02 Mar 2024, 18:16</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">com.ajioTesttt.ajioTwo.launch_ajio(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="8208831000">8.208</td>
+              <td class="duration" data-value="8208831000">8.208</td>
+              <td class="duration" data-value="8208831000">8.208</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.ajioTesttt.ajioTwo.navigate_to_men_and_click_on_footware()</td>
+              <td>1</td>
+              <td class="duration" data-value="2718777100">2.718</td>
+              <td class="duration" data-value="2718777100">2.718</td>
+              <td class="duration" data-value="2718777100">2.718</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.ajioTesttt.ajioTwo.user_clicks_on_sort_by_and_selects_option_in_dropdown_with_one_dim_map(io.cucumber.datatable.DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="2254828200">2.254</td>
+              <td class="duration" data-value="2254828200">2.254</td>
+              <td class="duration" data-value="2254828200">2.254</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.ajioTesttt.ajioTwo.validate_the_price_list()</td>
+              <td>1</td>
+              <td class="duration" data-value="89204367100">1:29.204</td>
+              <td class="duration" data-value="89204367100">1:29.204</td>
+              <td class="duration" data-value="89204367100">1:29.204</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.ajioTesttt.faceTwo.click_on_sigh_up()</td>
+              <td>4</td>
+              <td class="duration" data-value="2052384600">2.052</td>
+              <td class="duration" data-value="2052384600">2.054</td>
+              <td class="duration" data-value="8209538400">8.209</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.ajioTesttt.faceTwo.enter_the_date(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="2482730675">2.482</td>
+              <td class="duration" data-value="2482730675">3.049</td>
+              <td class="duration" data-value="9930922700">9.930</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.ajioTesttt.faceTwo.enter_the_month(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="2151780475">2.151</td>
+              <td class="duration" data-value="2151780475">2.175</td>
+              <td class="duration" data-value="8607121900">8.607</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.ajioTesttt.faceTwo.enter_the_name(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="292223700">0.292</td>
+              <td class="duration" data-value="292223700">0.524</td>
+              <td class="duration" data-value="1168894800">1.168</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.ajioTesttt.faceTwo.enter_the_number(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="94072325">0.094</td>
+              <td class="duration" data-value="94072325">0.199</td>
+              <td class="duration" data-value="376289300">0.376</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.ajioTesttt.faceTwo.enter_the_password(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="45534000">0.045</td>
+              <td class="duration" data-value="45534000">0.054</td>
+              <td class="duration" data-value="182136000">0.182</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.ajioTesttt.faceTwo.enter_the_surname(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="56260900">0.056</td>
+              <td class="duration" data-value="56260900">0.087</td>
+              <td class="duration" data-value="225043600">0.225</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.ajioTesttt.faceTwo.enter_the_year(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="2863607725">2.863</td>
+              <td class="duration" data-value="2863607725">3.069</td>
+              <td class="duration" data-value="11454430900">11.454</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.ajioTesttt.faceTwo.launch_facebook(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="8442084900">8.442</td>
+              <td class="duration" data-value="8442084900">11.668</td>
+              <td class="duration" data-value="33768339600">33.768</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.ajioTesttt.faceTwo.navigate_to_create_new_account()</td>
+              <td>4</td>
+              <td class="duration" data-value="3077761600">3.077</td>
+              <td class="duration" data-value="3077761600">3.090</td>
+              <td class="duration" data-value="12311046400">12.311</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">com.ajioTesttt.faceTwo.take_screenshot(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="996713950">0.996</td>
+              <td class="duration" data-value="996713950">2.259</td>
+              <td class="duration" data-value="3986855800">3.986</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>15</td>
+            <td>48</td>
+            <td class="duration">4.012</td>
+            <td class="duration">1:29.204</td>
+            <td class="duration">3:12.607</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+# Created at 2024-03-02T17:54:08.724
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(Unknown Source)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Unknown Source)
+
+
+# Created at 2024-03-02T17:54:19.287
+Unexpected IOException: 6,1,Ajio Mens Shopping,Mens Footware sorting(Ajio Mens Shopping),null,null,null
+
+
+# Created at 2024-03-02T17:54:19.288
+Unexpected IOException: 5,1,Create profile in Facebook,Create new Account #1(Create profile in Facebook),null,null,null
+
+
+# Created at 2024-03-02T17:54:19.309
+Unexpected IOException with stream: Mar 02, 2024 5:54:19 PM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+INFO: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+
+
+# Created at 2024-03-02T17:54:22.473
+Unexpected IOException with stream: Mar 02, 2024 5:54:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 122
+
+
+# Created at 2024-03-02T17:54:22.474
+Unexpected IOException with stream: Mar 02, 2024 5:54:22 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.10.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+
+
+# Created at 2024-03-02T17:54:36.552
+Unexpected IOException: 6,1,Create profile in Facebook,Create new Account #1(Create profile in Facebook),null,null,null
+
+
+# Created at 2024-03-02T17:54:36.552
+Unexpected IOException: 5,1,Create profile in Facebook,Create new Account #2(Create profile in Facebook),null,null,null
+
+
+# Created at 2024-03-02T17:54:36.575
+Unexpected IOException with stream: Mar 02, 2024 5:54:36 PM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+INFO: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+
+
+# Created at 2024-03-02T17:54:39.722
+Unexpected IOException with stream: Mar 02, 2024 5:54:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 122
+
+
+# Created at 2024-03-02T17:54:39.725
+Unexpected IOException with stream: Mar 02, 2024 5:54:39 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.10.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+
+
+# Created at 2024-03-02T17:54:45.870
+Unexpected IOException: 7,1,Create profile in Facebook,Create new Account #2(Create profile in Facebook),null,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: MicrosoftEdge=122.0.2365.52)\000ABuild info: version: '4.10.0'\002C revision: 'c14d967899'\000ASystem info: os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_391'\000ADriver info: org.openqa.selenium.edge.EdgeDriver\000ACommand: [9f29a5e50b94b8fe40f7a74afc68558d\002C findElement {using=xpath\002C value=//input[@name='firstname']}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: MicrosoftEdge\002C browserVersion: 122.0.2365.52\002C fedcm:accounts: true\002C ms:edgeOptions: {debuggerAddress: localhost:53870}\002C msedge: {msedgedriverVersion: 122.0.2365.63 (c6ca23ce880a...\002C userDataDir: C:\005CUsers\005Cgmsan\005CAppData\005CLoca...}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:53870/devtoo...\002C se:cdpVersion: 122.0.2365.52\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 9f29a5e50b94b8fe40f7a74afc68558d,null,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: MicrosoftEdge=122.0.2365.52)\000ABuild info: version: '4.10.0'\002C revision: 'c14d967899'\000ASystem info: os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_391'\000ADriver info: org.openqa.selenium.edge.EdgeDriver\000ACommand: [9f29a5e50b94b8fe40f7a74afc68558d\002C findElement {using=xpath\002C value=//input[@name='firstname']}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: MicrosoftEdge\002C browserVersion: 122.0.2365.52\002C fedcm:accounts: true\002C ms:edgeOptions: {debuggerAddress: localhost:53870}\002C msedge: {msedgedriverVersion: 122.0.2365.63 (c6ca23ce880a...\002C userDataDir: C:\005CUsers\005Cgmsan\005CAppData\005CLoca...}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:53870/devtoo...\002C se:cdpVersion: 122.0.2365.52\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 9f29a5e50b94b8fe40f7a74afc68558d,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: MicrosoftEdge=122.0.2365.52)\000ABuild info: version: '4.10.0'\002C revision: 'c14d967899'\000ASystem info: os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_391'\000ADriver info: org.openqa.selenium.edge.EdgeDriver\000ACommand: [9f29a5e50b94b8fe40f7a74afc68558d\002C findElement {using=xpath\002C value=//input[@name='firstname']}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: MicrosoftEdge\002C browserVersion: 122.0.2365.52\002C fedcm:accounts: true\002C ms:edgeOptions: {debuggerAddress: localhost:53870}\002C msedge: {msedgedriverVersion: 122.0.2365.63 (c6ca23ce880a...\002C userDataDir: C:\005CUsers\005Cgmsan\005CAppData\005CLoca...}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:53870/devtoo...\002C se:cdpVersion: 122.0.2365.52\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 9f29a5e50b94b8fe40f7a74afc68558d,org.openqa.selenium.NoSuchWindowException: \000Ano such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: MicrosoftEdge=122.0.2365.52)\000ABuild info: version: '4.10.0'\002C revision: 'c14d967899'\000ASystem info: os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_391'\000ADriver info: org.openqa.selenium.edge.EdgeDriver\000ACommand: [9f29a5e50b94b8fe40f7a74afc68558d\002C findElement {using=xpath\002C value=//input[@name='firstname']}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: MicrosoftEdge\002C browserVersion: 122.0.2365.52\002C fedcm:accounts: true\002C ms:edgeOptions: {debuggerAddress: localhost:53870}\002C msedge: {msedgedriverVersion: 122.0.2365.63 (c6ca23ce880a...\002C userDataDir: C:\005CUsers\005Cgmsan\005CAppData\005CLoca...}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:53870/devtoo...\002C se:cdpVersion: 122.0.2365.52\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 9f29a5e50b94b8fe40f7a74afc68558d\000A
+
+
+# Created at 2024-03-02T17:54:45.870
+Unexpected IOException: 5,1,Create profile in Facebook,Create new Account #3(Create profile in Facebook),null,null,null
+
+
+# Created at 2024-03-02T17:54:45.892
+Unexpected IOException with stream: Mar 02, 2024 5:54:45 PM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+INFO: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+
+
+# Created at 2024-03-02T17:54:49.976
+Unexpected IOException with stream: Mar 02, 2024 5:54:49 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 122
+
+
+# Created at 2024-03-02T17:54:49.978
+Unexpected IOException with stream: Mar 02, 2024 5:54:49 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.10.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+
+
+# Created at 2024-03-02T17:54:54.249
+Unexpected IOException: 7,1,Create profile in Facebook,Create new Account #3(Create profile in Facebook),null,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: MicrosoftEdge=122.0.2365.52)\000ABuild info: version: '4.10.0'\002C revision: 'c14d967899'\000ASystem info: os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_391'\000ADriver info: org.openqa.selenium.edge.EdgeDriver\000ACommand: [047753ec216c06e349c57b372f298cb2\002C findElement {using=xpath\002C value=//input[@name='firstname']}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: MicrosoftEdge\002C browserVersion: 122.0.2365.52\002C fedcm:accounts: true\002C ms:edgeOptions: {debuggerAddress: localhost:53905}\002C msedge: {msedgedriverVersion: 122.0.2365.63 (c6ca23ce880a...\002C userDataDir: C:\005CUsers\005Cgmsan\005CAppData\005CLoca...}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:53905/devtoo...\002C se:cdpVersion: 122.0.2365.52\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 047753ec216c06e349c57b372f298cb2,null,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: MicrosoftEdge=122.0.2365.52)\000ABuild info: version: '4.10.0'\002C revision: 'c14d967899'\000ASystem info: os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_391'\000ADriver info: org.openqa.selenium.edge.EdgeDriver\000ACommand: [047753ec216c06e349c57b372f298cb2\002C findElement {using=xpath\002C value=//input[@name='firstname']}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: MicrosoftEdge\002C browserVersion: 122.0.2365.52\002C fedcm:accounts: true\002C ms:edgeOptions: {debuggerAddress: localhost:53905}\002C msedge: {msedgedriverVersion: 122.0.2365.63 (c6ca23ce880a...\002C userDataDir: C:\005CUsers\005Cgmsan\005CAppData\005CLoca...}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:53905/devtoo...\002C se:cdpVersion: 122.0.2365.52\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 047753ec216c06e349c57b372f298cb2,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: MicrosoftEdge=122.0.2365.52)\000ABuild info: version: '4.10.0'\002C revision: 'c14d967899'\000ASystem info: os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_391'\000ADriver info: org.openqa.selenium.edge.EdgeDriver\000ACommand: [047753ec216c06e349c57b372f298cb2\002C findElement {using=xpath\002C value=//input[@name='firstname']}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: MicrosoftEdge\002C browserVersion: 122.0.2365.52\002C fedcm:accounts: true\002C ms:edgeOptions: {debuggerAddress: localhost:53905}\002C msedge: {msedgedriverVersion: 122.0.2365.63 (c6ca23ce880a...\002C userDataDir: C:\005CUsers\005Cgmsan\005CAppData\005CLoca...}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:53905/devtoo...\002C se:cdpVersion: 122.0.2365.52\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 047753ec216c06e349c57b372f298cb2,org.openqa.selenium.NoSuchWindowException: \000Ano such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: MicrosoftEdge=122.0.2365.52)\000ABuild info: version: '4.10.0'\002C revision: 'c14d967899'\000ASystem info: os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_391'\000ADriver info: org.openqa.selenium.edge.EdgeDriver\000ACommand: [047753ec216c06e349c57b372f298cb2\002C findElement {using=xpath\002C value=//input[@name='firstname']}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: MicrosoftEdge\002C browserVersion: 122.0.2365.52\002C fedcm:accounts: true\002C ms:edgeOptions: {debuggerAddress: localhost:53905}\002C msedge: {msedgedriverVersion: 122.0.2365.63 (c6ca23ce880a...\002C userDataDir: C:\005CUsers\005Cgmsan\005CAppData\005CLoca...}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:53905/devtoo...\002C se:cdpVersion: 122.0.2365.52\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 047753ec216c06e349c57b372f298cb2\000A
+
+
+# Created at 2024-03-02T17:54:54.250
+Unexpected IOException: 5,1,Create profile in Facebook,Create new Account #4(Create profile in Facebook),null,null,null
+
+
+# Created at 2024-03-02T17:54:54.263
+Unexpected IOException with stream: Mar 02, 2024 5:54:54 PM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+INFO: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+
+
+# Created at 2024-03-02T17:54:56.625
+Unexpected IOException with stream: Mar 02, 2024 5:54:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 122
+
+
+# Created at 2024-03-02T17:54:56.625
+Unexpected IOException with stream: Mar 02, 2024 5:54:56 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.10.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+
+
